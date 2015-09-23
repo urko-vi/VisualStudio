@@ -23,7 +23,7 @@ namespace GestorAlumnos
             this.FechaNacimiento = DateTime.Now;
         }
 
-
+        //p
 
         public string Nombre
         {

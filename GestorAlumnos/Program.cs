@@ -33,6 +33,16 @@ namespace GestorAlumnos
                     break;
             }
         }
+        private static void MostrarAlumnos()
+        {
+            IList<Alumno> alumnos = fa.MostrarAlumnos();
+            Alumno al = null;
+            for(int i = 0; i < alumnos.Count; i++)
+            {
+                al = alumnos.ElementAt(i);
+                Console.WriteLine(al.Nombre+" "+al.Apellidos);
+            }
+        }
         private static int MostrarMenu()
         {
             int opcion = 0;
