@@ -85,6 +85,7 @@ namespace GestorAlumnos
 
             set
             {
+
                 fechaNacimiento = value;
             }
         }
