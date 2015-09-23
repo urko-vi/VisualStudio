@@ -29,9 +29,15 @@ namespace GestorAlumnos
                     MostrarAlumnos();
                     break;
                 case 2: //Añadir Alumnos
-                    //AñadirAlumno();
+                    AddAlumno();
                     break;
             }
+        }
+        private static void AddAlumno()
+        {
+            Alumno al = new Alumno();
+
+            fa.AddAlumno(al);
         }
         private static void MostrarAlumnos()
         {
