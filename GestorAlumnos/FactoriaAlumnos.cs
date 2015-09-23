@@ -9,18 +9,26 @@ namespace GestorAlumnos
     class FactoriaAlumnos
     {
         IList<Alumno> alumnos = new List<Alumno>();
-        //MostrarAlumnos
-        public IList<Alumno> MostrarAlumnos()
+        private void cargarDatos()
         {
             Alumno al = new Alumno();
             al.Nombre = "Jon";
             al.Apellidos = "Perez Gutierrez";
 
             alumnos.Add(al);
+        }
+        //public
+        //MostrarAlumnos
 
+        public IList<Alumno> MostrarAlumnos()
+        {
             return alumnos;
         }
         //AñadirAlumnos(Alumno alumno)
+        public void AddAlumno(Alumno alumno)
+        {
+            alumnos.Add(alumno);
+        }
 
     }
 }
