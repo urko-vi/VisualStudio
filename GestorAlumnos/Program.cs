@@ -10,21 +10,23 @@ namespace GestorAlumnos
     {
         //mostrar alumnos
         //añadir alumnos 
-        
+        static FactoriaAlumnos  fa = null;
+
         static void Main(string[] args)
         {
             int opcion = 0;
-
+            fa = new FactoriaAlumnos();
             opcion = MostrarMenu();
             EjecutarOpciones(opcion);
             Console.ReadKey();
         }
         private static void EjecutarOpciones(int opcion)
         {
+           
             switch (opcion)
             {
                 case 1:// Mostrar Alumnos
-                    //MostrarAlumnos();
+                    MostrarAlumnos();
                     break;
                 case 2: //Añadir Alumnos
                     //AñadirAlumno();
