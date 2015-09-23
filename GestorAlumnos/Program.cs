@@ -19,6 +19,18 @@ namespace GestorAlumnos
             EjecutarOpciones(opcion);
             Console.ReadKey();
         }
+        private static void EjecutarOpciones(int opcion)
+        {
+            switch (opcion)
+            {
+                case 1:// Mostrar Alumnos
+                    //MostrarAlumnos();
+                    break;
+                case 2: //Añadir Alumnos
+                    //AñadirAlumno();
+                    break;
+            }
+        }
         private static int MostrarMenu()
         {
             int opcion = 0;
