@@ -13,7 +13,18 @@ namespace GestorAlumnos
         
         static void Main(string[] args)
         {
-            //Alumno al = new Alumno();
+            
+        }
+        private int MostrarMenu()
+        {
+            int opcion = 0;
+
+            Console.WriteLine("1.- Mostrar Alumnos");
+            Console.WriteLine("2.- Añadir Alumno");
+
+            opcion = Int32.Parse(Console.ReadLine());
+
+            return opcion;
         }
     }
 }
