@@ -16,7 +16,7 @@ namespace GestorAlumnos
             int opcion = 0;
 
             opcion = MostrarMenu();
-
+            EjecutarOpciones(opcion);
             Console.ReadKey();
         }
         private static int MostrarMenu()
@@ -25,7 +25,7 @@ namespace GestorAlumnos
 
             Console.WriteLine("1.- Mostrar Alumnos");
             Console.WriteLine("2.- Añadir Alumno");
-
+            
             opcion = Int32.Parse(Console.ReadLine());
 
             return opcion;
