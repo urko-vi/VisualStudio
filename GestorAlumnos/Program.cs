@@ -13,9 +13,13 @@ namespace GestorAlumnos
         
         static void Main(string[] args)
         {
-            
+            int opcion = 0;
+
+            opcion = MostrarMenu();
+
+            Console.ReadKey();
         }
-        private int MostrarMenu()
+        private static int MostrarMenu()
         {
             int opcion = 0;
 
