@@ -22,9 +22,14 @@ namespace GestorAlumnos
             this.Email = "";
             this.FechaNacimiento = DateTime.Now;
         }
-
-        //p
-
+        public Alumno(string nombre, string apellidos)
+        {
+            this.Nombre = nombre;
+            this.Apellidos = apellidos;
+            this.Telefono = "94";
+            this.Email = "";
+            this.FechaNacimiento = DateTime.Now;
+        }
         public string Nombre
         {
             get { 
@@ -85,7 +90,7 @@ namespace GestorAlumnos
 
             set
             {
-                if (value <= DateTime.Now.AddYears(-18))
+                if (value > DateTime.Now)
                 {
                     Console.WriteLine("la fecha introducida no es valida");
                 }

@@ -35,21 +35,20 @@ namespace GestorAlumnos
         }
         private static void AddAlumno()
         {
-            Alumno al = new Alumno();
-            /*
-                    private string nombre;
-        private string apellidos;
-        private string telefono;
-        private string email;
-        private DateTime fechaNacimiento;
-
-            */
+            string nombre ="", apellidos ="";
             Console.Clear();
 
             Console.WriteLine("Introduzca su nombre: ");
-            al.Nombre = Console.ReadLine();
+            nombre = Console.ReadLine();
             Console.WriteLine("Introduzca sus apellidos: ");
-            al.Apellidos = Console.ReadLine();
+            apellidos = Console.ReadLine();
+
+            Alumno al = new Alumno();
+            Alumno al2 = null;
+            al.Nombre = nombre;
+            al.Apellidos = apellidos;
+
+            al2 = new Alumno(nombre, apellidos);
             fa.AddAlumno(al);
         }
         private static void MostrarAlumnos()
