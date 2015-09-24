@@ -8,6 +8,7 @@ namespace GestorVehiculo
 {
     class Coche
     {
+        private static int numero = 0;
         private string nBastidor;
         private string marca;
         private string modelo;
@@ -17,6 +18,7 @@ namespace GestorVehiculo
 
         public Coche()
         {
+            numero++;
             NBastidor = "";
             Marca = "";
             Modelo = "";
@@ -86,6 +88,14 @@ namespace GestorVehiculo
             set
             {
                 fMatriculacion = value;
+            }
+        }
+
+        public static int Numero
+        {
+            get
+            {
+                return numero;
             }
         }
     }
