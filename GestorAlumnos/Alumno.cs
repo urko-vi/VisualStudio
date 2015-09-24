@@ -85,8 +85,14 @@ namespace GestorAlumnos
 
             set
             {
-
-                fechaNacimiento = value;
+                if (value <= DateTime.Now.AddYears(-18))
+                {
+                    Console.WriteLine("la fecha introducida no es valida");
+                }
+                else
+                {
+                    fechaNacimiento = value;
+                }
             }
         }
     }
